@@ -13,20 +13,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-namespace FloLogic.MobileApp.UWA
+namespace HelloWorld.Windows
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage
     {
         public MainPage()
         {
             this.InitializeComponent();
-            // Load the Xamarin application.
-            LoadApplication(new App);
+
+            LoadApplication(new HelloWorld.App());
         }
     }
 }

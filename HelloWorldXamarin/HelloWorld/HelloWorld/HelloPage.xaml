@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.HelloPage" >
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#CCCCCC" >
+    <Button Text="{Binding ButtonText}" Command="{Binding ToggleCommand}" />
+    <Label Text="{Binding HelloWorldText}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" IsVisible="{Binding HelloWorldVisible}" />
+  </StackLayout>
+</ContentPage>
