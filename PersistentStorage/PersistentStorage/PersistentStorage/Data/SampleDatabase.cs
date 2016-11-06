@@ -26,6 +26,7 @@ namespace PersistentStorage.Data
             connection = DependencyService.Get<ISQLite>().GetConnection();
             // create the tables
             connection.CreateTable<SampleRecord>();
+            connection.CreateTable<SampleForeignRecord>();
         }
 
         public IEnumerable<SampleRecord> GetItems()
@@ -33,6 +34,22 @@ namespace PersistentStorage.Data
             lock (locker)
             {
                 return connection.Table<SampleRecord>().ToList();                
+            }
+        }
+
+        public IEnumerable<SampleForeignRecord> GetForeignRecords()
+        {
+            lock(locker)
+            {
+                return connection.Table<SampleForeignRecord>().ToList();
+            }
+        }
+
+        public IEnumerable<SampleForeignRecord> GetForeignRecords(int sampleId)
+        {
+            lock(locker)
+            {
+                return GetForeignRecords().Where(f => f.SampleRecordId == sampleId);
             }
         }
 
@@ -49,6 +66,22 @@ namespace PersistentStorage.Data
             lock (locker)
             {
                 return connection.Delete<SampleRecord>(id);
+            }
+        }
+
+        public int SaveForeignItem(SampleForeignRecord item)
+        {
+            lock (locker)
+            {
+                return connection.Insert(item);
+            }
+        }
+
+        public int DeleteForeignItem(int id)
+        {
+            lock (locker)
+            {
+                return connection.Delete<SampleForeignRecord>(id);
             }
         }
 

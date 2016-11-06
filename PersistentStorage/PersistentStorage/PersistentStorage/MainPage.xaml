@@ -8,6 +8,7 @@
   <ContentPage.Resources>
     <ResourceDictionary>
       <conv:BinaryToStringConverter x:Key="binaryToStringConverter"></conv:BinaryToStringConverter>
+      <conv:GuidToStringConverter x:Key="guidToStringConverter"></conv:GuidToStringConverter>
     </ResourceDictionary>
   </ContentPage.Resources>
 
@@ -17,7 +18,19 @@
       <Button Text="Insert new" Command="{Binding InsertNew}" />
       <Button Text="Delete all" Command="{Binding DeleteAll}" />
 
-      <ListView VerticalOptions="FillAndExpand" ItemsSource="{Binding Items}" HasUnevenRows="True">
+      <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" >
+        <Label Text="ForeignData" />
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+          <Label Text="Foreign ID" FontAttributes="Bold" />
+          <Label Text="{Binding ForeignRecord.Id}" />
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+          <Label Text="Foreign Guid" FontAttributes="Bold" />
+          <Label Text="{Binding ForeignRecord.UniqueId, Converter={StaticResource guidToStringConverter}}" />
+        </StackLayout>
+      </StackLayout>
+
+      <ListView VerticalOptions="FillAndExpand" ItemsSource="{Binding Items}" HasUnevenRows="True" ItemSelected="OnItemSelected">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>

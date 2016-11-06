@@ -3,9 +3,9 @@ using System;
 
 namespace PersistentStorage.Models
 {
-    [Table("SampleRecords")]
     public class SampleRecord
     {
+
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
