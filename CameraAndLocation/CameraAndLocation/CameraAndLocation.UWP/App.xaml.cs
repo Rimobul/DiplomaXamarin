@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using XLabs.Ioc;
 
 namespace CameraAndLocation.UWP
 {
@@ -30,6 +31,8 @@ namespace CameraAndLocation.UWP
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            //SetIoC();
         }
 
         /// <summary>
@@ -59,6 +62,8 @@ namespace CameraAndLocation.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+
+                //Resolver.Resolve<XFormsAppWin>().RaiseStartup();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

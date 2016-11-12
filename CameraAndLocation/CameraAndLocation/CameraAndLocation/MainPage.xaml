@@ -3,9 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CameraAndLocation"
              x:Class="CameraAndLocation.MainPage">
-
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <ContentPage.Content>
+    <StackLayout>
+      <Button Command="{Binding TakePictureCommand}" Text="Take picture" />
+      <Image Source="{Binding ImageSource}" VerticalOptions="CenterAndExpand" />
+      <Label Text="Status:" />
+      <Label Text="{Binding Status}" />
+      <Label Text="Current GPS Info:" />
+      <Label Text="{Binding GPSText}" />
+    </StackLayout>
+  </ContentPage.Content>
 
 </ContentPage>
