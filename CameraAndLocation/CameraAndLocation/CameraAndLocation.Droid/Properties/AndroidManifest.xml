@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rimobul.cameraandlocation" android:installLocation="auto" android:versionCode="1" android:versionName="Test">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.rimobul.cameraandlocation" android:versionCode="1" android:versionName="Test">
 	<uses-sdk android:minSdkVersion="19" />
-	<application android:label="CameraAndLocation.Droid" android:icon="@drawable/icon"></application>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<application android:label="CameraAndLocation" android:icon="@drawable/icon">
+    <provider android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.rimobul.cameraandlocation.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/file_paths"></meta-data>
+    </provider>
+  </application>
 </manifest>

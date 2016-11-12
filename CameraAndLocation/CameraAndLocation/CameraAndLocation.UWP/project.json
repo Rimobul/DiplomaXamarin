@@ -1,8 +1,8 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Xamarin.Forms": "2.2.0.31",
-    "XLabs.Forms": "2.0.5782"
+    "Xam.Plugin.Media": "2.6.1",
+    "Xamarin.Forms": "2.0.0.6482"
   },
   "frameworks": {
     "uap10.0": {}

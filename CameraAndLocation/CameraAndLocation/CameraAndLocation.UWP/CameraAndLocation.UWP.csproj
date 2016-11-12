@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{1F9B0D4A-A87C-48CB-85A2-6752029EDDA7}</ProjectGuid>
+    <ProjectGuid>{5BDAE7E9-5E01-4721-95CC-63BF34345AE5}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CameraAndLocation.UWP</RootNamespace>
@@ -129,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CameraAndLocation\CameraAndLocation.csproj">
-      <Project>{e6768644-110b-4546-bc5e-f999e22b0f6a}</Project>
+      <Project>{1961e301-1ef2-49b8-a3e4-2e89be9bc40d}</Project>
       <Name>CameraAndLocation</Name>
     </ProjectReference>
   </ItemGroup>

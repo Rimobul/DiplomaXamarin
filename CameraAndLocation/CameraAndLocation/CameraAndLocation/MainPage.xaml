@@ -3,15 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CameraAndLocation"
              x:Class="CameraAndLocation.MainPage">
+
   <ContentPage.Content>
-    <StackLayout>
-      <Button Command="{Binding TakePictureCommand}" Text="Take picture" />
-      <Image Source="{Binding ImageSource}" VerticalOptions="CenterAndExpand" />
-      <Label Text="Status:" />
-      <Label Text="{Binding Status}" />
-      <Label Text="Current GPS Info:" />
-      <Label Text="{Binding GPSText}" />
-    </StackLayout>
+    <ScrollView>
+      <StackLayout Spacing="10" Padding="10">
+        <Button Command="{Binding TakePhoto}" Text="Take photo" />
+        <Image Source="{Binding PhotoSource}" />
+        <Label Text="Location data: " />
+        <Label Text="{Binding LocationText}" />
+      </StackLayout>
+    </ScrollView>
   </ContentPage.Content>
 
 </ContentPage>

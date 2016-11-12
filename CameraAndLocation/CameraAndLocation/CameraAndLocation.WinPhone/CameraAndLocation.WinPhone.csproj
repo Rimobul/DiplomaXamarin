@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{66E2A3F0-A444-4C5E-8048-6386D8F7A391}</ProjectGuid>
+    <ProjectGuid>{737A9DD4-071B-4FC7-8125-069635BB167E}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CameraAndLocation.WinPhone</RootNamespace>
@@ -114,7 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CameraAndLocation\CameraAndLocation.csproj">
-      <Project>{e6768644-110b-4546-bc5e-f999e22b0f6a}</Project>
+      <Project>{1961e301-1ef2-49b8-a3e4-2e89be9bc40d}</Project>
       <Name>CameraAndLocation</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
 
-  <Identity Name="ce5a9a39-d8ff-4719-8855-43750be7fe37"
+  <Identity Name="c807207a-1c9b-41a4-93b7-07c7edb701a5"
             Publisher="CN=Ľubomír"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="ce5a9a39-d8ff-4719-8855-43750be7fe37" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="c807207a-1c9b-41a4-93b7-07c7edb701a5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>CameraAndLocation.WinPhone</DisplayName>

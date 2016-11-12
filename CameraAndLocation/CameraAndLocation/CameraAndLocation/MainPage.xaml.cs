@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CameraAndLocation.ViewModels;
 using Xamarin.Forms;
 
 namespace CameraAndLocation
@@ -11,6 +7,9 @@ namespace CameraAndLocation
     {
         public MainPage()
         {
+            var viewModel = new CameraLocationViewModel();
+            viewModel.AlertDisplayer = DisplayAlert;
+            BindingContext = viewModel;
             InitializeComponent();
         }
     }
