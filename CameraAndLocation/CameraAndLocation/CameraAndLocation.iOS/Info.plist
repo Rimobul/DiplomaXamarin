@@ -52,6 +52,10 @@
 	<string>This app needs access to the camera to take photos.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app needs access to photos.</string>
+	<key>NSLocationWhenInUsageDescription</key>
+	<string>This app needs to access location occasionally.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app needs to access location continuosly.</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1</string>
 </dict>

@@ -9,6 +9,8 @@
       <StackLayout Spacing="10" Padding="10">
         <Button Command="{Binding TakePhoto}" Text="Take photo" />
         <Image Source="{Binding PhotoSource}" />
+        <Button Command="{Binding GetLocation}" Text="Start tracking location" />
+        <Label Text="{Binding LocationStatus}" />
         <Label Text="Location data: " />
         <Label Text="{Binding LocationText}" />
       </StackLayout>

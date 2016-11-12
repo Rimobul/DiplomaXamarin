@@ -1,4 +1,7 @@
-﻿using Plugin.Media;
+﻿using Plugin.Geolocator;
+using Plugin.Geolocator.Abstractions;
+using Plugin.Media;
+using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -13,10 +16,13 @@ namespace CameraAndLocation.ViewModels
     {
         private string locationText;
         private ImageSource photoSource;
+        private string locationStatus;
 
         public CameraLocationViewModel()
         {
+            locationStatus = "Location off";
             TakePhoto = new Command(async () => await TakePhotoImplementation());
+            GetLocation = new Command(async () => await GetLocationImplementation());
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -24,6 +30,8 @@ namespace CameraAndLocation.ViewModels
         public AlertDelegate AlertDisplayer { get; set; }
 
         public ICommand TakePhoto { get; private set; }
+
+        public ICommand GetLocation { get; private set; }
 
         public ImageSource PhotoSource
         {
@@ -51,13 +59,69 @@ namespace CameraAndLocation.ViewModels
             }
         }
 
+        public string LocationStatus
+        {
+            get { return locationStatus; }
+            set
+            {
+                if(locationStatus != value)
+                {
+                    locationStatus = value;
+                    OnPropertyChanched();
+                }
+            }
+        }
+
+        private async Task GetLocationImplementation()
+        {
+            try
+            {
+                var locator = CrossGeolocator.Current;
+
+                if(!locator.IsGeolocationAvailable || !locator.IsGeolocationEnabled)
+                {
+                    await AlertDisplayer?.Invoke("No geolocation", "Geolocation is not allowed or not available.", "OK");
+                    return;
+                }
+
+                locator.DesiredAccuracy = 50;
+                LocationStatus = "Starting location...";
+                var position = await locator.GetPositionAsync();
+                ChangeLocationText(position);
+                LocationStatus = "Location on";
+                locator.PositionChanged += PositionChanged;
+            }
+            catch (Exception ex)
+            {
+                await AlertDisplayer?.Invoke("No geolocation", ex.Message, "OK");
+            }
+        }
+
+        private void PositionChanged(object sender, PositionEventArgs e)
+        {
+            ChangeLocationText(e.Position);
+        }
+
+        private void ChangeLocationText(Position position)
+        {
+            if (position == null) return;
+
+            var north = position.Latitude > 0 ? "N" : "S";
+            var east = position.Longitude > 0 ? "E" : "W";
+
+            LocationText = Math.Abs(position.Latitude).ToString()
+                + " " + north
+                + Math.Abs(position.Longitude).ToString()
+                + " " + east;
+        }
+
         private async Task TakePhotoImplementation()
         {
             await CrossMedia.Current.Initialize();
 
             if(!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
             {
-                await AlertDisplayer("No Camera", ":( No camera available.", "OK");
+                await AlertDisplayer?.Invoke("No Camera", ":( No camera available.", "OK");
                 return;
             }
 
@@ -72,7 +136,7 @@ namespace CameraAndLocation.ViewModels
             if (file == null)
                 return;
 
-            await AlertDisplayer("File Location", file.Path, "OK");
+            await AlertDisplayer?.Invoke("File Location", file.Path, "OK");
 
             PhotoSource = ImageSource.FromStream(() =>
             {
