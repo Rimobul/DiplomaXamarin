@@ -2,8 +2,8 @@ using NativeUIElement.UI;
 using Xamarin.Forms;
 using NativeUIElement.Droid.UI;
 using Xamarin.Forms.Platform.Android;
-using MonoDroidToolkit;
 using System.ComponentModel;
+using com.refractored.monodroidtoolkit;
 
 [assembly: ExportRenderer(typeof(CircularProgressBar), typeof(CircularProgressBarRenderer))]
 namespace NativeUIElement.Droid.UI
@@ -36,10 +36,10 @@ namespace NativeUIElement.Droid.UI
             if (this.Element == null || this.Control == null)
                 return;
 
-            if(e.PropertyName == CircularProgressBar.ProgressProperty.PropertyName)
-            {
-                Control.Progress = Element.Progress;
-            }
+            //if(e.PropertyName == CircularProgressBar.ProgressProperty.PropertyName)
+            //{
+            //    Control.Progress = Element.Progress;
+            //}
         }
     }
 }
