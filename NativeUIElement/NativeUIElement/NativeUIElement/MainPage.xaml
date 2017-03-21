@@ -3,13 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:NativeUIElement"
              xmlns:ui="clr-namespace:NativeUIElement.UI;assembly=NativeUIElement"
+             xmlns:vm="clr-namespace:NativeUIElement.ViewModels;assembly=NativeUIElement"
              x:Class="NativeUIElement.MainPage">
 
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+      <Button Command="{Binding GenerateRandomNumber}" Text="Generate percentage" />
+      <Label Text="{Binding CurrentPercentage}" />
       <ui:CircularProgressBar
         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
-        ProgressColor="Red" ProgressBackgroundColor="Gray" Max="1.0" Progress="0.75" />
+        ProgressColor="Red" ProgressBackgroundColor="Gray" Max="{Binding Max}" Progress="{Binding CurrentValue}" />
     </StackLayout>
   </ContentPage.Content>
 

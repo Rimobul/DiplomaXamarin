@@ -3,7 +3,6 @@ using Xamarin.Forms;
 using NativeUIElement.Droid.UI;
 using Xamarin.Forms.Platform.Android;
 using System.ComponentModel;
-using com.refractored.monodroidtoolkit;
 
 [assembly: ExportRenderer(typeof(CircularProgressBar), typeof(CircularProgressBarRenderer))]
 namespace NativeUIElement.Droid.UI

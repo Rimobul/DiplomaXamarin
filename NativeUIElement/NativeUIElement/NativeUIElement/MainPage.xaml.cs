@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NativeUIElement.ViewModels;
 using Xamarin.Forms;
 
 namespace NativeUIElement
@@ -11,6 +7,8 @@ namespace NativeUIElement
     {
         public MainPage()
         {
+            var viewModel = new RandomViewModel();
+            BindingContext = viewModel;
             InitializeComponent();
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NativeUIElement.UWP.Dependencies;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -59,6 +60,7 @@ namespace NativeUIElement.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+                Xamarin.Forms.DependencyService.Register<WindowsRandomProvider>();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

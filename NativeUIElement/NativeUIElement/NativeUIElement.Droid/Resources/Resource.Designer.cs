@@ -26,111 +26,6 @@ namespace NativeUIElement.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circleColor = global::NativeUIElement.Droid.Resource.Attribute.circleColor;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circularProgressBarStyle = global::NativeUIElement.Droid.Resource.Attribute.circularProgressBarStyle;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_gravity = global::NativeUIElement.Droid.Resource.Attribute.circular_gravity;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_indeterminate = global::NativeUIElement.Droid.Resource.Attribute.circular_indeterminate;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_indeterminate_interval = global::NativeUIElement.Droid.Resource.Attribute.circular_indeterminate_interval;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_marker_progress = global::NativeUIElement.Droid.Resource.Attribute.circular_marker_progress;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_progress = global::NativeUIElement.Droid.Resource.Attribute.circular_progress;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_progress_background_color = global::NativeUIElement.Droid.Resource.Attribute.circular_progress_background_color;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_progress_color = global::NativeUIElement.Droid.Resource.Attribute.circular_progress_color;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.circular_stroke_width = global::NativeUIElement.Droid.Resource.Attribute.circular_stroke_width;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.indeterminate = global::NativeUIElement.Droid.Resource.Attribute.indeterminate;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.indeterminate_interval = global::NativeUIElement.Droid.Resource.Attribute.indeterminate_interval;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.innerSize = global::NativeUIElement.Droid.Resource.Attribute.innerSize;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.max = global::NativeUIElement.Droid.Resource.Attribute.max;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.pinned = global::NativeUIElement.Droid.Resource.Attribute.pinned;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.pinnedDrawable = global::NativeUIElement.Droid.Resource.Attribute.pinnedDrawable;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.progress = global::NativeUIElement.Droid.Resource.Attribute.progress;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.progressButtonStyle = global::NativeUIElement.Droid.Resource.Attribute.progressButtonStyle;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.progressColor = global::NativeUIElement.Droid.Resource.Attribute.progressColor;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.shadowDrawable = global::NativeUIElement.Droid.Resource.Attribute.shadowDrawable;
-			global::com.refractored.monodroidtoolkit.Resource.Attribute.unpinnedDrawable = global::NativeUIElement.Droid.Resource.Attribute.unpinnedDrawable;
-			global::com.refractored.monodroidtoolkit.Resource.Color.progress_default_circle_color = global::NativeUIElement.Droid.Resource.Color.progress_default_circle_color;
-			global::com.refractored.monodroidtoolkit.Resource.Color.progress_default_progress_color = global::NativeUIElement.Droid.Resource.Color.progress_default_progress_color;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_background_dark = global::NativeUIElement.Droid.Resource.Color.refractored_background_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_background_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_background_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_background_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_background_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_background_light = global::NativeUIElement.Droid.Resource.Color.refractored_background_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_dark = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_dark_disabled = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_dark_disabled;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_disabled_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_disabled_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_disabled_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_disabled_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_bright_foreground_light = global::NativeUIElement.Droid.Resource.Color.refractored_bright_foreground_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_dim_foreground_disabled_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_dim_foreground_disabled_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_dim_foreground_disabled_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_dim_foreground_disabled_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_dim_foreground_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_dim_foreground_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_dim_foreground_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_dim_foreground_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_highlighted_text_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_highlighted_text_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_highlighted_text_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_highlighted_text_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_hint_foreground_holo_dark = global::NativeUIElement.Droid.Resource.Color.refractored_hint_foreground_holo_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_hint_foreground_holo_light = global::NativeUIElement.Droid.Resource.Color.refractored_hint_foreground_holo_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_blue_bright = global::NativeUIElement.Droid.Resource.Color.refractored_holo_blue_bright;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_blue_dark = global::NativeUIElement.Droid.Resource.Color.refractored_holo_blue_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_blue_light = global::NativeUIElement.Droid.Resource.Color.refractored_holo_blue_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_green_dark = global::NativeUIElement.Droid.Resource.Color.refractored_holo_green_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_green_light = global::NativeUIElement.Droid.Resource.Color.refractored_holo_green_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_orange_dark = global::NativeUIElement.Droid.Resource.Color.refractored_holo_orange_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_orange_light = global::NativeUIElement.Droid.Resource.Color.refractored_holo_orange_light;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_purple = global::NativeUIElement.Droid.Resource.Color.refractored_holo_purple;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_red_dark = global::NativeUIElement.Droid.Resource.Color.refractored_holo_red_dark;
-			global::com.refractored.monodroidtoolkit.Resource.Color.refractored_holo_red_light = global::NativeUIElement.Droid.Resource.Color.refractored_holo_red_light;
-			global::com.refractored.monodroidtoolkit.Resource.Dimension.progress_inner_size = global::NativeUIElement.Droid.Resource.Dimension.progress_inner_size;
-			global::com.refractored.monodroidtoolkit.Resource.Drawable.pin_progress_pinned = global::NativeUIElement.Droid.Resource.Drawable.pin_progress_pinned;
-			global::com.refractored.monodroidtoolkit.Resource.Drawable.pin_progress_shadow = global::NativeUIElement.Droid.Resource.Drawable.pin_progress_shadow;
-			global::com.refractored.monodroidtoolkit.Resource.Drawable.pin_progress_unpinned = global::NativeUIElement.Droid.Resource.Drawable.pin_progress_unpinned;
-			global::com.refractored.monodroidtoolkit.Resource.Drawable.scrubber_control_normal_holo = global::NativeUIElement.Droid.Resource.Drawable.scrubber_control_normal_holo;
-			global::com.refractored.monodroidtoolkit.Resource.Drawable.scrubber_control_pressed_holo = global::NativeUIElement.Droid.Resource.Drawable.scrubber_control_pressed_holo;
-			global::com.refractored.monodroidtoolkit.Resource.Id.bottom = global::NativeUIElement.Droid.Resource.Id.bottom;
-			global::com.refractored.monodroidtoolkit.Resource.Id.center = global::NativeUIElement.Droid.Resource.Id.center;
-			global::com.refractored.monodroidtoolkit.Resource.Id.center_horizontal = global::NativeUIElement.Droid.Resource.Id.center_horizontal;
-			global::com.refractored.monodroidtoolkit.Resource.Id.center_vertical = global::NativeUIElement.Droid.Resource.Id.center_vertical;
-			global::com.refractored.monodroidtoolkit.Resource.Id.clip = global::NativeUIElement.Droid.Resource.Id.clip;
-			global::com.refractored.monodroidtoolkit.Resource.Id.clip_horizontal = global::NativeUIElement.Droid.Resource.Id.clip_horizontal;
-			global::com.refractored.monodroidtoolkit.Resource.Id.clip_vertical = global::NativeUIElement.Droid.Resource.Id.clip_vertical;
-			global::com.refractored.monodroidtoolkit.Resource.Id.end = global::NativeUIElement.Droid.Resource.Id.end;
-			global::com.refractored.monodroidtoolkit.Resource.Id.fill = global::NativeUIElement.Droid.Resource.Id.fill;
-			global::com.refractored.monodroidtoolkit.Resource.Id.fill_horizontal = global::NativeUIElement.Droid.Resource.Id.fill_horizontal;
-			global::com.refractored.monodroidtoolkit.Resource.Id.fill_vertical = global::NativeUIElement.Droid.Resource.Id.fill_vertical;
-			global::com.refractored.monodroidtoolkit.Resource.Id.left = global::NativeUIElement.Droid.Resource.Id.left;
-			global::com.refractored.monodroidtoolkit.Resource.Id.right = global::NativeUIElement.Droid.Resource.Id.right;
-			global::com.refractored.monodroidtoolkit.Resource.Id.start = global::NativeUIElement.Droid.Resource.Id.start;
-			global::com.refractored.monodroidtoolkit.Resource.Id.top = global::NativeUIElement.Droid.Resource.Id.top;
-			global::com.refractored.monodroidtoolkit.Resource.Integer.circular_indeterminent_interval = global::NativeUIElement.Droid.Resource.Integer.circular_indeterminent_interval;
-			global::com.refractored.monodroidtoolkit.Resource.Integer.progressbutton_indeterminent_interval = global::NativeUIElement.Droid.Resource.Integer.progressbutton_indeterminent_interval;
-			global::com.refractored.monodroidtoolkit.Resource.Style.CircularProgressBar = global::NativeUIElement.Droid.Resource.Style.CircularProgressBar;
-			global::com.refractored.monodroidtoolkit.Resource.Style.CircularProgressBarLight = global::NativeUIElement.Droid.Resource.Style.CircularProgressBarLight;
-			global::com.refractored.monodroidtoolkit.Resource.Style.ProgressButton = global::NativeUIElement.Droid.Resource.Style.ProgressButton;
-			global::com.refractored.monodroidtoolkit.Resource.Style.ProgressButton_Pin = global::NativeUIElement.Droid.Resource.Style.ProgressButton_Pin;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_gravity = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_gravity;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate_interval = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_indeterminate_interval;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_marker_progress = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_marker_progress;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_progress = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_progress;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_progress_background_color = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_progress_background_color;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_progress_color = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_progress_color;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.HoloCircularProgressBar_circular_stroke_width = global::NativeUIElement.Droid.Resource.Styleable.HoloCircularProgressBar_circular_stroke_width;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_android_clickable = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_android_clickable;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_android_focusable = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_android_focusable;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_android_selectableItemBackground = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_android_selectableItemBackground;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_circleColor = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_circleColor;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_indeterminate = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_indeterminate;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_indeterminate_interval = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_indeterminate_interval;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_innerSize = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_innerSize;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_max = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_max;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_pinned = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_pinned;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_pinnedDrawable = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_pinnedDrawable;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_progress = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_progress;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_progressColor = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_progressColor;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_shadowDrawable = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_shadowDrawable;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.ProgressButton_unpinnedDrawable = global::NativeUIElement.Droid.Resource.Styleable.ProgressButton_unpinnedDrawable;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme = global::NativeUIElement.Droid.Resource.Styleable.Theme;
-			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme_circularProgressBarStyle = global::NativeUIElement.Droid.Resource.Styleable.Theme_circularProgressBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::NativeUIElement.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -1965,9 +1860,6 @@ namespace NativeUIElement.Droid
 			// aapt resource value: 0x7f060056
 			public const int notification_subtext_size = 2131099734;
 			
-			// aapt resource value: 0x7f060074
-			public const int progress_inner_size = 2131099764;
-			
 			static Dimension()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -2988,9 +2880,6 @@ namespace NativeUIElement.Droid
 			// aapt resource value: 0x7f090006
 			public const int cancel_button_image_alpha = 2131296262;
 			
-			// aapt resource value: 0x7f09000b
-			public const int circular_indeterminent_interval = 2131296267;
-			
 			// aapt resource value: 0x7f090008
 			public const int design_snackbar_text_max_lines = 2131296264;
 			
@@ -3002,9 +2891,6 @@ namespace NativeUIElement.Droid
 			
 			// aapt resource value: 0x7f090002
 			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131296258;
-			
-			// aapt resource value: 0x7f09000a
-			public const int progressbutton_indeterminent_interval = 2131296266;
 			
 			// aapt resource value: 0x7f090007
 			public const int status_bar_notification_info_maxnum = 2131296263;
@@ -3366,9 +3252,6 @@ namespace NativeUIElement.Droid
 			
 			// aapt resource value: 0x7f0a015a
 			public const int Animation_Design_BottomSheetDialog = 2131362138;
-			
-			// aapt resource value: 0x7f0a0178
-			public const int AppCompatDialogStyle = 2131362168;
 			
 			// aapt resource value: 0x7f0a00a5
 			public const int Base_AlertDialog_AppCompat = 2131361957;
@@ -3816,12 +3699,6 @@ namespace NativeUIElement.Droid
 			
 			// aapt resource value: 0x7f0a0175
 			public const int CircularProgressBarLight = 2131362165;
-			
-			// aapt resource value: 0x7f0a0176
-			public const int MainTheme = 2131362166;
-			
-			// aapt resource value: 0x7f0a0177
-			public const int MainTheme_Base = 2131362167;
 			
 			// aapt resource value: 0x7f0a0032
 			public const int Platform_AppCompat = 2131361842;
