@@ -8,7 +8,7 @@ using System.ComponentModel;
 namespace NativeUIElement.Droid.UI
 {
     public class CircularProgressBarRenderer 
-        : ViewRenderer<CircularProgressBar, HoloCircularProgressBar>
+        : ViewRenderer<CircularProgressBar, CircularProgress>
     {
         protected override void OnElementChanged(ElementChangedEventArgs<CircularProgressBar> e)
         {
@@ -17,9 +17,8 @@ namespace NativeUIElement.Droid.UI
             if (e.OldElement != null || this.Element == null)
                 return;
 
-            var progress = new HoloCircularProgressBar(Forms.Context)
+            var progress = new CircularProgress(Forms.Context, Element.Max)
             {
-                Max = Element.Max,
                 Progress = Element.Progress,
                 ProgressColor = Element.ProgressColor.ToAndroid(),
                 ProgressBackgroundColor = Element.ProgressBackgroundColor.ToAndroid()
@@ -35,10 +34,10 @@ namespace NativeUIElement.Droid.UI
             if (this.Element == null || this.Control == null)
                 return;
 
-            //if(e.PropertyName == CircularProgressBar.ProgressProperty.PropertyName)
-            //{
-            //    Control.Progress = Element.Progress;
-            //}
+            if (e.PropertyName == CircularProgressBar.ProgressProperty.PropertyName)
+            {
+                Control.Progress = Element.Progress;
+            }
         }
     }
 }
