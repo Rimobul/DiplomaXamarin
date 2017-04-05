@@ -1,4 +1,5 @@
-﻿using TabletLayout.ViewModels;
+﻿using System;
+using TabletLayout.ViewModels;
 using Xamarin.Forms;
 
 namespace TabletLayout.Views
@@ -9,6 +10,19 @@ namespace TabletLayout.Views
         {
             BindingContext = new MenuViewModel();
             InitializeComponent();
+            listView.ItemSelected += OnItemSelected;
+        }
+
+        public event Action<ViewModels.MenuItem> ItemChanged;
+
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as ViewModels.MenuItem;
+            if (item != null)
+            {
+                ItemChanged?.Invoke(item);
+                listView.SelectedItem = null;
+            }
         }
     }
 }

@@ -2,5 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TabletLayout.Views.TabletPage">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+      <Label Text="Name" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+      <Entry Placeholder="Name" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+      <Label Text="Surname" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+      <Entry Placeholder="Surname" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+      <Label Text="Street" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+      <Entry Placeholder="Street" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+      <Label Text="City" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+      <Entry Placeholder="City" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+      <Label Text="Country" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+      <Entry Placeholder="Country" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+    </StackLayout>
+    <Button Text="Submit" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" />
+  </StackLayout>
 </ContentPage>

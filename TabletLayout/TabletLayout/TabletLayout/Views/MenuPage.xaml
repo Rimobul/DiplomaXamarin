@@ -6,7 +6,7 @@
              Title="Personal Organiser">
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand">
-      <ListView x:Name="listView" VerticalOptions="FillAndExpand" 
+      <ListView x:Name="listView" VerticalOptions="FillAndExpand"
                 SeparatorVisibility="None" ItemsSource="{Binding MenuItems}">
         <ListView.ItemTemplate>
           <DataTemplate>
