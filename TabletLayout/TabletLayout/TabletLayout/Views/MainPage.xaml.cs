@@ -14,6 +14,7 @@ namespace TabletLayout.Views
             }
             else
             {
+                IsPresented = true;
                 this.MasterBehavior = MasterBehavior.Split;
             }
             menuPage.ItemChanged += OnItemChanged;
